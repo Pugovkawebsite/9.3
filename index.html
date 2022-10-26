@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@700&family=Public+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main__vertical-wrap">
+            <div class="citation-block">
+                <div class="citation-block__text__wrap">
+                    <div class="citation-block__text">
+                        “The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”
+                    </div>
+                <img src="icons/circle_arrow.svg" alt="arrow" class="citation-block__img">
+                </div>
+                <div class="citation-block__autor">Ada Lovelace</div>
+            </div>
+            <div class="main__horizontal-wrap">
+                <div class="time">
+                    <div class="time__text">
+                        <div class="time__icon"></div>
+                        <div class="time__descr">
+                            <span id="welcom"></span><span id="welcom_text">, IT’S CURRENTLY</span>
+                        </div>
+                    </div>
+                    <div class="time__number__wrap">
+                        <!-- <div class="time__number">11:37</div> -->
+                        <div class="time__number"></div>
+                        <div class="time__utc"></div>
+                    </div>
+                </div>
+                <button class="main-button">
+                    <div id="buttonClose" class="main-button__text">MORE</div>
+                    <div id="buttonOpen" class="main-button__text text__close">LESS</div>
+                    <div class="main-button__circle">
+                        <img src="icons/white_arrow.svg" alt="bottom" class="main-button__img">
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="window__active window__active__forest window__active__hidden">
+            <div class="window__active__time">
+                <div class="window__active__time__left">
+                    <div class="window__active__line">
+                        <div class="title title__forest">
+                            CURRENT TIMEZONE
+                        </div>
+                        <div id="timezone" class="number number__forest"></div>
+                    </div>
+                    <div class="window__active__line">
+                        <div class="title title__forest">
+                            DAY OF YEAR
+                        </div>
+                        <div id="dayWidthNewYearPlace" class="number number__forest"></div>
+                    </div>
+                </div>
+                <div class="window__active__time__right">
+                    <div class="window__active__line">
+                        <div class="title title__forest">
+                            DAY OF THE WEEK
+                        </div>
+                        <div id="dayOfWeek" class="number number__forest"></div>
+                    </div>
+                    <div class="window__active__line">
+                        <div class="title title__forest">
+                            WEEK NUMBER
+                        </div>
+                        <div id="numberWeek" class="number number__forest"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
